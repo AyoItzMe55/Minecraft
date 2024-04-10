@@ -13292,8 +13292,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44163ae3f0a1d430a9b15b3be7ac6242, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trunkPrefab: {fileID: 0}
-  leafPrefab: {fileID: 0}
+  trunkPrefab: {fileID: 822228612917571416, guid: 45172401c05ad7b40bb52ab033a78d84, type: 3}
+  leafPrefab: {fileID: 2946353077113024874, guid: 0c79f3ee27e5e47f8a08bae5a234fd83, type: 3}
 --- !u!1001 &1960835534
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -10,6 +10,18 @@ public class TreeGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        int x, y, z;
+        x = Random.Range(-40, 40);
+        y = 0;
+        z= Random.Range(-40, 40);
+
+        for (int i = 0; i < 30; i++)
+        {
+            GrowTree(new Vector3Int(x, y, z));
+        }
+
+
         Vector3Int growPos = new Vector3Int(9, 0, -2);
         GameObject tree = new GameObject("Tree");
         tree.transform.position = growPos;
@@ -40,6 +52,7 @@ public class TreeGenerator : MonoBehaviour
                 }
             }
         }
+
     }
 
     // Update is called once per frame
@@ -47,4 +60,14 @@ public class TreeGenerator : MonoBehaviour
     {
         
     }
+    void GrowTree(Vector3Int pos)
+    {
+        Vector3Int growPos = pos;
+        GameObject tree = new GameObject("Tree");
+        tree.transform.position = growPos;
+
+        int height = Random.Range(5, 15);
+        Vector3Int[] branchDirections = { Vector3Int.forward, Vector3Int.right, Vector3Int.back, Vector3Int.left };
+    }
+
 }
